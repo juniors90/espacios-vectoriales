@@ -1,0 +1,33 @@
+\newpage
+Sean $V$, $W$ y $Z$ espacios vectoriales sobre el cuerpo $\mathbb{F}$ de
+dimensiones $n$, $m$ y $p$, respetctivamente.
+Sea $T$ una transformación lineal de $V$ en $W$ y $U$ una transformación
+lineal de $W$ en $Z$. Supóngase que se tienen las bases ordenadas
+\begin{align*}
+    \mathcal{B}   &= \{\alpha_{1}, \alpha_{2}, \dots , \alpha_{n}\}\\
+    \mathcal{B}'  &= \{\beta_{1}, \beta_{2}, \dots ,\beta_{m}\}\\
+    \mathcal{B}'' &= \{\gamma_{1}, \gamma_{2}, \dots ,\gamma_{p}\}
+\end{align*}
+de los espacios $V$, $W$ y $Z$, respectivamente. Sea $A$ la matriz de $T$
+respecto al par $\mathcal{B}$, $\mathcal{B}'$ y sea $B$ la matriz de $U$ 
+respecto al par $\mathcal{B}'$, $\mathcal{B}''$. Es fácil ver ahora que la
+matriz $C$ de la transformación $UT$ respecto al par $\mathcal{B}$, $\mathcal{B}''$ 
+es el producto de $B$ y $A$. En efecto, si $\alpha$ es cualquier vector de $V$
+\begin{align*}
+    [T\alpha]_{\mathcal{B}'}&=A[\alpha]_{\mathcal{B}}\\
+    [U(T\alpha)]_{\mathcal{B}''}&=B[T\alpha]_{\mathcal{B}'}
+\end{align*}
+Y así
+\begin{align*}
+    [(UT)(\alpha)]_{\mathcal{B}''}&=BA[T\alpha]_{\mathcal{B}}
+\end{align*}
+y luego. por la deﬁnición y unicidad de la matriz representante, se debe tener
+que $C = BA$. Se puede también ver esto haciendo el cálculo
+\begin{align*}
+    (UT)(\alpha_{i})&=U(T\alpha_{i}) \\
+    &=U\left (\sum_{k=1}^{m}A_{kj}\beta_{k}\right ) \\
+    &=\sum_{k=1}^{m}A_{kj}U(\beta_{k}) \\
+    &=\sum_{k=1}^{m}A_{kj}\sum_{i=1}^{p}B_{ik}\gamma_{i}\\
+    &=\sum_{i=1}^{p} \left (\sum_{k=1}^{m}B_{ik}A_{kj}\right )\gamma_{i}
+\end{align*}
+

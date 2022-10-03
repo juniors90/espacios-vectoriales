@@ -1,0 +1,45 @@
+\newpage
+\textbf{Teorema 21.} Sean $V$ y $W$ espacios vectoriales sobre el 
+cuerpo $\mathbb{F}$. Para toda transformación lineal $T$ de $V$
+en $W$, existe una única transformación lineal $T^{t}$ de $W^{\ast}$
+en $V^{\ast}$ tal que
+\begin{align*}
+T^{t}g(\alpha) = g(T\alpha)
+\end{align*}
+para todo $g$ de $W^{\ast}$ y todo $\alpha$ de $V$.
+
+A $T^{t}$ se la llama \textbf{transpuesta} de $T$. Esta transformación
+$T^{t}$ también se llama a menudo adjunta de $T$, pero no usaremos
+esta terminología.
+
+\textbf{Teorema 22.} Sean $V$ y $W$ espacios vectoriales sobre
+el cuerpo $\mathbb{F}$ y sea $T$ una transformación lineal de
+$V$ en $W$. El espacio nulo de $T^{t}$ es el anulador de la imagen
+de $T$. Si $V$ y $W$ son de dimensión finita, entonces
+\begin{itemize}
+    \item[$(i)$] $\mathtt{rango} (T^{t}) = \mathtt{rango} (T)$
+    \item[$(ii)$] la imagen de $T^{t}$ es el anulador del espacio
+    nulo de $T$.
+\end{itemize}
+\textbf{Teorema 23.} Sean $V$ y $W$ espacios vectoriales de dimensión
+finita sobre el cuerpo $\mathbb{F}$. Sea $\mathcal{B}$ una base ordenada
+de $V$ con base dual $\mathcal{B}^{\ast}$, y sea $\mathcal{B}'$ una base
+ordenada de $W$ con base dual $\mathcal{B}'^{\ast}$. Sea $T$ una
+transformación lineal de $V$ en $W$.
+
+Sea $A$ la matriz de $T$ respecto a $\mathcal{B}, \mathcal{B}'$  y sea
+$B$ la matriz de $T^{t}$ respecto a $\mathcal{B}'^{\ast},\mathcal{B}^{\ast}$
+Entonces $B_{ij}=A_{ji}$
+
+\textbf{Definición.} Si $A$ es una matriz $m\times n$ sobre el cuerpo
+$\mathbb{F}$, la transpuesta de $A$ es la matriz $n\times m$,
+$A^{t}$, definida por $A^{t}_{ij} = A_{ji}$.
+
+El Teorema 23 dice, pues, que si $T$ es una transformación lineal de
+$V$ en $W$, cuya matriz con respecto a un par de bases es $A$, entonces
+la transformación transpuesta $T^{t}$ está representada, en el par de
+bases dual, por la matriz transpuesta $A^{t}$.
+
+\textbf{Teorema 24.} Sea $A$ cualquier matriz $m\times n$ sobre el
+cuerpo $\mathbb{F}$. Entonces el rango de filas de $A$ es igual al
+rango de columnas de $A$.

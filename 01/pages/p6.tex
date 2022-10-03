@@ -1,0 +1,40 @@
+\newpage
+
+\begin{align*}
+    T\alpha &= T\left (\sum_{j=1}^{n} x_{j}\alpha_{j}\right )\\
+            &= \sum_{j=1}^{n} x_{j}(T\alpha_{j})\\
+            &= \sum_{j=1}^{n} x_{j} \sum_{i=1}^{m} A_{ij}\beta_{i}\\
+            &= \sum_{j=1}^{n} \left ( \sum_{i=1}^{m} A_{ij}x_{j}\right )\beta_{i}
+\end{align*}
+
+Si $X$ es la matriz de las coordenadas de $\alpha$ en la
+base ordenada ($\mathcal{B}$ entonces el cálculo anterior
+muestra que $AX$ es la matriz de las coordenadas del vector $T\alpha$
+en la base ordenada $\mathcal{B}'$, ya que el escalar
+
+$$\sum A_{ij}x_{j}$$
+
+es el elemento de la $i$-ésima fila de la matriz columna $AX$.
+Obsérvese también que si $A$ es cualquier matriz $m \times n$
+sobre el cuerpo $\mathbb{F}$, entonces
+
+\begin{equation}
+    T\left (\sum_{j=1}^{n} x_{j}\alpha_{j}\right )
+    =
+    \sum_{i=1}^{m} \left (\sum_{j=1}^{n} A_{ij}x_{j} \right )\beta_{j}
+\end{equation}
+
+define una transformación lineal $T$ de $V$ en $W$, la matriz
+de la cual es $A$, respecto a $\mathcal{B}\mathcal{B}'$.
+
+\textbf{Teorema 11.} Sean $V$ un espacio vectorial de dimensión $n$
+sobre el cuerpo  $\mathbb{F}$ y $W$ un espacio vectorial de dimensión
+$m$ sobre $\mathbb{F}$. Sean $\mathcal{B}$ y $\mathcal{B}'$ una
+base ordenada de $V$ y de $W$ respectivamente. Para cada transformación
+lineal $T$ de $V$ en $W$, existe una matriz $m \times n$, $A$,
+cuyos elementos pertenecen a $\mathbb{F}$, tal que
+$$[T\alpha]_{\mathcal{B}'} = A[\alpha]_{\mathcal{B}}$$
+mm todo vector $\alpha$ en $V$. Además, $T \to A$ es una correspondencia
+biyectiva entre el conjunto de todas las transformaciones lineales
+de $V$ en $W$ y el conjunto de todas las matrices $m \times n$ sobre el
+cuerpo $\mathbb{F}$.

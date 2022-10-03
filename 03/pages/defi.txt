@@ -1,0 +1,39 @@
+Deﬁnición. Sean $V$ y $W$. dos espacios vectoriales sobre el cuerpo $\mathbb{F}$. Una
+transformación lineal de $V$ en $W$ es una función $T$ de $V$ en W tal que
+
+$$T(c\alpha + \beta) = cT(\alpha) + T(\beta)$$
+
+todos los vectores ot _v B de V y todos los escalares $c$ de $\mathbb{F}$.
+
+Teorema 1. Sea $V$ un espacio vectorial de dimensión finita sobre el cuerpo
+$\mathbb{F}$, $\{\alpha_{1}, \alpha _{2}, \dots, \alpha_{n}\}$ una base
+ordenada de $V$. Sean $W$ un espacio vectorial sobre
+el mismo cuerpo $\mathbb{F}$ y $\{\beta_{1}, \beta _{2}, \dots , \beta_{n} \}$,
+vectores cualesquiera de W. Entonces existe una una transformación
+lineal de $T$ de $V$ en $W$ tal que
+$$T(\alpha_{i}) = \beta_{i}, \forall i = 1, 2, \dots, n$$
+
+\textbf{Teorema 2.} Sean $V$ y $W$ espacios vectoriales sobre el
+cuerpo $\mathbb{F}$ y sea $T$ una transformación lineal de $V$
+en $W$. Supóngase que $V$ es de dimensión finita. Entonces
+$$rango (T) + nulidad (T) = dim V.$$
+
+\textbf{Teorema 2.} Si $A$ es una matriz $m \times n$ de elementos
+en el cuerpo $\mathbb{F}$, entonces $$\text{rango de filas} (A) = \text{rango de columnas} 
+\textbf{Teorema 4.} Sean $V$ y $W$ espacios vectoriales sobre el
+cuerpo $\mathbb{F}$. Sean $T$ y $U$ transformaciones lineales de
+$V$ en $W$. La función $(T + U)$ definida por
+$$(T + U)(\alpha) = T\alpha + U\alpha$$
+es una transformación lineal de $V$ en $W$. Si $c$ es cualquier
+elemento de $\mathbb{F}$, la función $(cT)$ definida por
+$$(cT)(c\alpha) = c(T\alpha)$$
+
+es una transformación lineal de $V$ en $W$. El conjunto de
+todas las transformaciones lineales de $V$ en $W$, junto con
+la adición y la multiplicación escalar aquí definidas,
+es un espacio vectorial sobre el cuerpo F.
+
+\textbf{Teorema 5.} Sea $V$ un subespacio vectorial de dimensión
+finita $n$ sobre el cuerpo $\mathbb{F}$ y sea $W$ un espacio vectorial de
+dimensión finita $m$ sobre $\mathbb{F}$. Entonces el espacio $L(V, W)$ es de
+dimensión finita y tiene dimensión $mn$.

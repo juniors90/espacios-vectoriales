@@ -1,0 +1,47 @@
+\newpage
+\textbf{Teorema 19.} Si $f$ es un funcional lineal $\alpha$ nulo
+sobre el espacio vectorial $V$, entonces el espacio nulo de $f$
+es un hiperespacio en $V$. Recíprocamente, todo hiperespacio de $V$
+es el espacio nulo de un (no único) funcional lineal no nulo
+sobre $V$.
+
+\textbf{Lema.} Si $f$ y $g$ son funcionales lineales en el
+espacio vectorial $V$, entonces $g$ es un múltiplo escalar
+de $f$ si y solo si, el espacio nulo de $g$ contiene al espacio
+nulo de $f$, esto es, si y solo si, $f(\alpha) = 0$ implica
+que $g(\alpha) = 0$.
+
+\textbf{Teorema 20.} Sean $g, f_{1},\dots, f_{n}$ funcionales lineales
+sobre un espacio vectoriales $V$ con espacios nulos $N, N_{1}, N_{2},\dots, N_{r}$
+respectivamente. Entonces $g$ es  una combinación lineal de los
+$f_{1},\dots, f_{n}$ si y solo si $N$ contiene la intersección
+$N_{1}\cap N_{1}\cap\dots\cap N_{r}$
+
+\section{{\Large Transpuesta de una transformación lineal}}
+
+Supóngase que se tienen dos espacios vectoriales $V$ y $W$ sobre
+el cuerpo $\mathbb{F}$ y una transformación lineal $T$ de $V$ en $W$.
+Entonces $T$ induce una transformación lineal de $W^{\ast}$ en
+$V^{\ast}$, como sigue. Supóngase que $g$ es un funcional lineal
+en $W$ y sea
+\begin{equation}\label{eq:fun_lin}
+    f(\alpha)=g(T\alpha)
+\end{equation}
+para cada $\alpha$ en $V$. Entonces \eqref{eq:fun_lin} deﬁne una
+función $f$ de $V$ en $\mathbb{F}$, que es la composición de $T$,
+función de $V$ en $W$, con $g$, función de $W$ en $\mathbb{F}$.
+Como ambas, $T$ y $g$, son lineales, el Teorema 6 dice que $f$
+es también lineal; vale decir, $f$ es una función lineal en $V$.
+
+Así $T$ suministra una correspondencia $T^{t}$ que asocia a
+cada funcional lineal $g$ sobre $W$ un funcional lineal
+$f = T^{t}g$ sobre $V$, deﬁnido por \eqref{eq:fun_lin}.
+Obsérvese también que $T^{t}$ es igualmente una transformación
+lineal de $W^{\ast}$. En efecto, si $g_{1}$ y $g_{2}$ están en
+$W^{\ast}$ y $c$ es un escalar
+\begin{align*}\label{eq:fun_lin_tras}
+    [T^{t}(cg_{1} + g_{2})](\alpha)&=(cg_{1} + g_{2})(T\alpha)\\
+    &=cg_{1}(T\alpha) + g_{2}(T\alpha)\\
+    &=c(T^{t}g_{1})(\alpha) + (T^{t}g_{2})(\alpha)
+\end{align*}
+de modo que $T^{t}(cg_{1} + g_{2}) = cT^{t}g_{1} + T^{t}g_{2}$.

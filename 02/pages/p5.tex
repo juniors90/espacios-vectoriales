@@ -1,0 +1,40 @@
+\newpage
+
+Sea $\mathcal{B}=\{\alpha_{1}, \alpha_{2}, \dots, \alpha_{n}\}$ una base de $V$.
+Conforme al Teorema 1 existe (para cada $i$) un funcional lineal único $f_{i}$
+en $V$ tal que
+\begin{equation}
+    f_{i}(\alpha_{j})=\delta_{ij}
+\end{equation}
+De esta forma se obtiene de $\mathcal{B}$ un conjtinto de $n$ funcionales
+lineales distintos $\{f_{1}, f_{2}, \dots, f_{n}\}$, sobre $V$. Estos
+funcionales son también linealmente independientes, pues supóngase que
+\begin{equation}
+    f=\sum_{i}^{n}c_{i}f_{i}
+\end{equation}
+Entonces
+\begin{align*}
+    f_{i}(\alpha_{j})&=\sum_{i=1}^{n}c_{i}f_{i}(\alpha_{j})\\
+                     &=\sum_{i=1}^{n}c_{i}\delta_{ij}\\
+                     &=c_{j}.
+\end{align*}
+En particular, si $f$ es el funcional cero $f(\alpha_{i}) = 0$ para cada $j$ y,
+por tanto, los escalares $c$, son todos ceros. Entonces los
+$\{f_{1}, f_{2}, \dots, f_{n}\}$, son $n$ funcionales linealmente
+independientes, y como se sabe que $V^\ast$ tiene dimensión $n$,
+deben ser tales que $\mathcal{B}^\ast = \{f_{1}, f_{2}, \dots, f_{n}\}$
+es una base de $V^\ast$. Esta base se llama base dual de $\mathcal{B}$.
+
+\textbf{Teorema 15.} Sea $V$ un espacio vectorial de dimensión finita
+sobre el cuerpo $\mathbb{F}$ y sea $\mathcal{B}^\ast = \{f_{1}, f_{2}, \dots, f_{n}\}$
+una base de $V$. Entonces existe una única base dual
+$\mathcal{B}^\ast=\{f_{1}, f_{2}, \dots, f_{n}\}$ de $V^\ast$ tal que
+$f_{i}(\alpha_{j})=\delta_{ij}$. Para cada funcional lineal fsobre
+$V$ se tiene
+\begin{equation}
+    f=\sum_{i=1}^nf(\alpha_{i})f_{i}
+\end{equation}
+y para cada vector $\alpha$ de $V$ se tiene
+\begin{equation}
+    \alpha=\sum_{i=1}^nf_{i}(\alpha)\alpha_{i}
+\end{equation}

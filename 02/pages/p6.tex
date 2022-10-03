@@ -1,0 +1,42 @@
+\newpage
+\textbf{Definición.} Si V es un espacio vectorial sobre el cuerpo
+$\mathbb{F}$ y $S$ es un subconjunto de $V$, el anulador de $S$ es
+el conjunto $S^\circ$ de funcionales lineales $f$ sobre $V$ tales
+que $f(\alpha) = 0$ para todo $\alpha$ de $S$.
+
+\textbf{Observación.}
+\begin{itemize}
+    \item $S^{\circ}$ es un subespacio de $V^{\ast}$, sea o no $S$
+    un subespacio de $V$.
+    \item Si $S$ es el conjunto que consta del solo vector cero,
+    entonces $S^{\circ} = V^{\ast}$.
+    \item Si $S = V$, entonces $S^{\circ}$ es el subespacio cero de
+    $V^{\ast}$. (Esto es fácil de ver cuando $V$ es de dimensión
+    finita.)
+\end{itemize}
+
+\textbf{Teorema 16.} Sea $V$ un espacio vectorial de dimensión finita
+sobre el cuerpo $\mathbb{F}$ y sea $W$ un subespacio de $V$. Entonces
+$$dim W + dim W^{\circ} = dim V.$$
+
+\textbf{Corolario.} Si $W$ es un subespacio de dimensión $k$ de un
+espacio vectorial $V$ de dimensión $n$, entonces $W$ es la
+intersección de $(n - k)$ hiperespacios en $V$.
+
+\textbf{Corolario.} Si $W_{1}$ y $W_{2}$ son subespacios de un espacio
+vectorial de dimención finita, entonces $W_{1} = W_{2}$ si y solo
+si $W_{1}^{\circ} = W_{2}^{\circ}$.
+
+\section{{\Large El doble dual}}
+\textbf{Definición.}
+
+Una pregunta respecto a bases duales que no se contestó en la sección
+anterior, era si toda base de $V^{\ast}$ es la dual de alguna base de $V$.
+Una posibilidad de contestar esta pregunta es considerar $V^{\ast\ast}$,
+espacio dual de $V^{\ast}$.
+
+Si $\alpha$ es un vector de $V$, entonces $\alpha$ induce
+un funcional lineal $L_{\alpha}$, sobre $V^{\ast}$, definido por
+\begin{align}
+    L_{\alpha}(f)=f(\alpha),  f \text{ en }V^{\ast}.
+\end{align}

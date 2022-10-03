@@ -1,0 +1,41 @@
+\newpage
+con lo que se debe tener
+\begin{align}\label{eq:defi_mul}
+    C_{ij}=\sum_{k=1}^{m}B_{ik}A_{kj}
+\end{align}
+Ya se había motivado la deﬁnición \eqref{eq:defi_mul} para la
+multiplicación de matrices por operaciones sobre las ﬁlas de
+una matriz. Aquí se ha visto que una motivación muy convincente
+para la deﬁnición se tiene mediante la composición de
+transformaciones lineales.
+
+\textbf{Teorema 13.} Sean $V$, $W$ y $Z$ espacios vectoriales de
+dimensión finita sobre el cuerpo $\mathbb{F}$. Sea $T$ una
+transformación lineal de V en W y U una transformación lineal
+de $W$ en $Z$. Si $\mathcal{B}$, $\mathcal{B}'$ y $\mathcal{B}''$
+son las bases ordenadas de los espacios $V$, $W$ y $Z$,
+respectivamente, y si $A$ es la matriz de $T$ respecto al par
+$\mathcal{B}$, $\mathcal{B}'$ y $B$ es la matriz de $U$ respecto
+al par $\mathcal{B}'$, $\mathcal{B}''$, entonces la matriz de
+la composición $UT$ respecta al par $\mathcal{B}$, $\mathcal{B}''$,
+es la matriz producto $C = BA$.
+
+\textbf{Teorema 14.} Sea $V$ un espacio vectorial de dimensión finita
+sobre el cuerpo $\mathbb{F}$. Sean
+\begin{align*}
+    \mathcal{B}   &= \{\alpha_{1}, \alpha_{2}, \dots , \alpha_{n}\}&&y&
+    \mathcal{B}'  &= \{\beta_{1}, \beta_{2}, \dots ,\beta_{m}\}
+\end{align*}
+son bases ordenadas de $V$. Supóngase que $T$ es un operador lineal
+sobre $V$. Si $P=[P_{1}, P_{2},\dots, P_{n}]$es la matriz $n \times n$
+de columnas $P_{j}=[\alpha_{j}']_{\mathcal{B}'}$, entonces
+$$[T]_{\mathcal{B}'} = P^{-1}[T]_{\mathcal{B}}P$$
+otra manera, si $U$ es el operador lineal sobre $V$ definido por
+$U\alpha_{j}=\alpha_{j}'$, $j=1,2,\dots, n$ entonces
+\begin{align*}
+    [T]_{\mathcal{B}'} = [U]_{\mathcal{B}}^{-1} [T]_{\mathcal{B}}[U]_{\mathcal{B}}
+\end{align*}
+\textbf{Deﬁnición.} Sean $A$ y $B$ dos matrices (cuadradas) $n \times n$
+sobre el cuerpo $\mathbb{F}$. Se dice que $B$ es semejante a $A$ sobre
+$\mathbb{F}$ si existe una matriz inversible  $n \times n$ $P$ $A$ sobre
+$\mathbb{F}$ tal qué $B = P^{-1}AP$.

@@ -1,0 +1,34 @@
+\newpage
+
+\section{{\Large Funcionales lineales}}
+Si $V$ es un espacio vectorial sobre el cuerpo $\mathbb{F}$, una
+transformación lineal $f$ de $V$ en el cuerpo de escalares
+$\mathbb{F}$ se llama también un funcional lineal sobre $V$.
+
+Si se comienza desde el principio, esto quiere decir que $f$ es
+una función de $V$ en $F$, tal que
+$$f(c\alpha + \beta) = cf(\alpha) +f(\beta)$$
+para todos los vectores $\alpha$ y $\beta$ de $V$ y todos
+los escalares $c$ de $\mathbb{F}$.
+
+\textbf{Ejemplo 19.} Sea $n$ entero positivo y $\mathbb{F}$ un
+cuerpo. Si $A$ es una matriz $n \times n$ con elementos
+$\mathbb{F}$, la traza de $A$ es el escalar
+$$\mathrm{tr} A = A_{11}+A_{11}+\dots+A_{nn}$$
+La función traza es un funcional lineal en el espacio de las 
+matrices $\mathbb{F}^{n\times n}$, pues
+
+\begin{align*}
+    \mathrm{tr} (cA + B) &= \sum_{i=1}^{n}(cA_{ii} + B_{ii})              \\
+                &= c\sum_{i=1}^{n} A_{ii} + \sum_{i=1}^{n} B_{ii}\\
+                &= c\mathrm{tr}A + \mathrm{tr}B.
+\end{align*}
+
+Si $V$ es un espacio vectorial, el conjunto de todos los funcionales lineales
+sobre $V$ forman, naturalmente, un espacio vectorial. Es el espacio $L(V, F)$.
+Se designa este espacio por $V^\ast$ y se le llama espacio dual del $V$:
+$$V^\ast = L(V, F)$$.
+Si $V$ es de dimensión ﬁnita se puede obtener una descripción
+muy explícita del espacio dual $V^\ast$. Por el Teorema 5 sabemos
+algo acerca del espacio $V^\ast$
+$$dim V^\ast = dim V.$$

@@ -1,0 +1,46 @@
+\newpage
+
+\begin{itemize}
+    \item[$(v)$] Existe una base $\{\alpha_{1}, \alpha_{2}, \dots , 
+    \alpha_{n}\}$ de $V$ tal que $\{T\alpha_{1}, T\alpha_{2}, \dots ,
+    T\alpha_{n}\}$ es una base de $W$.
+\end{itemize}
+
+\section{{\Large Isomorﬁsmo}}
+
+Si $V$ y $W$ son espacios vectoriales sobre el cuerpo $\mathbb{F}$,
+toda transformación lineal $T$ de $V$ en $W$ sobreyectiva e inyectiva,
+se dice isomorﬁsmo de $V$ sobre $W$.
+
+Si existe un isomorﬁsmo de $V$ sobre $W$, se dice que $V$ es isomorfo a $W$.
+
+\textbf{Teorema 10.} Todo espacio vectorial de dimensión $n$ sobre el
+cuerpo $\mathbb{F}$ isomorfo al espacio $\mathbb{F}^n$.
+
+\section{{\Large Representación de transformaciones por matrices}}
+
+Sea $V$ un espacio vectorial de dimensión $n$ sobre el cuerpo $\mathbb{F}$,
+y sea $W$ un espacio vectorial de dimensión $m$ sobre $\mathbb{F}$.
+Sea $\mathcal{B} = \{\alpha_{1}, \alpha_{2}, \dots , \alpha_{n}\}$ una
+base ordenada de $V$, y $\mathcal{B}' = \{\beta_{1}, \beta_{2}, \dots ,
+\beta_{m}\}$ una base ordenada de $W$. Si $T$ es cualquier transformación
+lineal de $V$ en $W$, entonces $T$ está determinada por su efecta
+sobre los vectores $\alpha_{j}$. Cada uno de los $n$ vectores $T\alpha$
+se expresa de manera única como combinación lineal
+
+\begin{equation}\label{eq:sum}
+    T \alpha_{j} = \sum_{1}^{m} A_{ij}\beta_{j}
+\end{equation}
+
+de los $\beta_{j}$. los escalares $A_{1j}$, $A_{2j}$, $\dots$, $A_{mj}$ son
+las coordenadas de $T\alpha_{j}$, en la base ordenada $\mathcal{B}'$.
+Por consiguiente, la transformación $T$ está determinada por los
+$mn$ escalares $A_{ij}$ mediante la expresión \eqref{eq:sum}. La matriz $m \times n$,
+$A$, deﬁnida por $A(i, j) = A_{ij}$ se llama matriz de $T$ respecto al par
+de bases ordenadas $\mathcal{B}$ y $\mathcal{B}'$.
+
+La tarea inmediata es comprender claramente cómo la matriz $A$
+determina la transformación lineal $T$.
+
+Si $\alpha = x_{1}\alpha_{1} + x_{1}\alpha_{2} + \dots + x_{n}\alpha_{n}$, es un vector de $V$, entonces
+
