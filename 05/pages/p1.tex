@@ -1,0 +1,61 @@
+\newpage
+
+Si queremos dar una forma canónica debemos pensar en cómo
+describir el $N$. Por corolario anterior, si $N$ es nilpotente,
+existe $r>0$ tal que $N^{r}=0$ entonces $m_N|x^{r}$. Con lo cual
+$N$ es nilpotente si y solo sí
+$m_N=x^{s}$ para algún $s\in \mathbb{N}, s\leq n$ si y solo sí
+$p_N=x^{n}$ para algún $n=\dim(V)$.
+
+Por \textbf{teorema de descomposición cíclica}, tenemos que si
+$$
+p_r=x^{s_r},
+p_{r-1}=x^{s_{r-1}},
+\dots
+p_2=x^{s_2},
+p_1=x^{s_1}=m_N
+$$
+con $s_r \leq s_{r_1} \leq \dots \leq s_2 \leq s_1$ tales que
+$s_r + s_{r_1} + \dots + s_2 + s_1 =\dim(V)=n$. Existe una base
+$\mathcal{B}$ tal que
+\begin{equation*}[N]=\left(
+	\begin{smallmatrix}
+		0      & 0      & \cdots & 0      & 0      &        &          &        &        &        &        &\\
+		1      & 0      & \cdots & 0      & 0      &        &          &        &        &        &        &\\
+		0      & 1      & \cdots & 0      & 0      &        &          &        &        &        &        &\\
+		\vdots & \vdots & \ddots & \vdots & \vdots &        &          &        &        &        &        &\\
+		0      & 0      & \cdots & 1      & 0      &        &          &        &        &        &        &\\
+		&        &        &        &        & 0      & 0      & 0        & \cdots & 0      & 0      &\\
+		&        &        &        &        & 1      & 0      & 0        & \cdots & 0      & 0      &\\
+		&        &        &        &        & 0      & 1      & 0        & \cdots & 0      & 0      &\\
+		&        &        &        &        & 0      & 0      & 1        & \cdots & 0      & 0      &\\
+		&        &        &        &        & \vdots & \vdots &          & \ddots & \vdots & \vdots &\\
+		&        &        &        &        & 0      & 0      &          & \cdots & 1      & 0      &\\
+		&        &        &        &        &        &        &          &        &        &        &\ddots 
+	\end{smallmatrix}\right)
+\end{equation*}
+
+Recíprocamente, las matrices de este tipo dan operadores nilpotentes.
+
+\textbf{Observación.} En general, a menos de equivalencia,
+hay tantas matrices de tamaño $n$ como lo que se llama particiones
+de $n$ formas de cubrir a $n$ como suma de números naturales.
+
+
+\textbf{Definición.} Una matriz bloque elemental de Jordan
+con valor propio $c$ (asociada a un escalar ``$c$'') es la
+matriz $B \in \mathbb{F}^{n\times n}$ forma:
+\begin{equation}B=\left(
+	\begin{matrix}
+		c      & 0      & \cdots & 0      \\
+		0      & c      & \cdots & 0      \\
+		\vdots & \vdots & \ddots & \vdots \\
+		0      & 0      & \cdots & c      
+	\end{matrix}\right)
+\end{equation} 
+
+\textbf{Teorema.} Sea $V$ un espacio vectorial de dimensión finita
+y sea $T:V \to V$ tal que $m_T$ es producto de factores lineales
+entonces existe $\mathcal{B}$ una base de $V$ tal que $[T]_{\mathcal{B}}$
+es un bloque de Jordan. La descomposición es única con respecto
+al tamaño de cada bloque.

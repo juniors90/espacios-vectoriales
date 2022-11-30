@@ -1,0 +1,42 @@
+\newpage
+
+\textbf{Corolario.}  Desigualdad de Bessel. Sea $\{w_{1}, w_{2}, \dots, w_{n}\}$
+un conjunto ortogonal de rectores no nulos en un espacio producto interno $V$.
+Si $v$ es cualquier vector de $V$, entonces
+$$\displaystyle{\sum_{i=0}^{n}}\frac{|\langle v|w_{i}\rangle|^{2}}{||w_{i}||^2}\leq||v||^{2}$$
+la desigualdad vale si, y solo si
+$$v=\displaystyle{\sum_{i=0}^{n}} \frac{\langle v|w_{i} \rangle}{||w_{i}||^2}w_{i}$$
+
+\section{Funciones lineales y adjuntas}
+
+\textbf{Teorema.} Sean $V$ un espacio producto interno de dimensión finita y $f$ un
+funcional lineal sobre $V$. Entonces, existe un único vector $v$ de $V$ tal que
+$$f_{v}(w) = \langle w|v \rangle$$
+para todo $w$ de $V$.
+
+\textbf{Definición.} Sea $V$ un espacio vectorial con producto interno de
+$\langle \cdot | \cdot \rangle$ y sea $T : V \to V$. Se dice que $T$ tiene
+un adjunto si $\exists T^{\ast} : V \to V$  es una transformación lineal tal que
+$\langle  T(v) | w \rangle=\langle  v | T^{\ast}(w) \rangle, \forall v, w \in V$
+
+\textbf{Observación.} $T^{\ast}$ depende de $T$ y de $\langle \cdot | \cdot \rangle$.
+
+\textbf{Teorema.} Para cualquier operador lineal $T$ en un espacio producto
+interno de dimensión finita. existe un único operador lineal $T^{\ast}$ sobre
+$V$ tal que $$\langle  T(v) | w \rangle=\langle  v | T^{\ast}(w) \rangle,
+\forall v, w \in V.$$
+\textbf{Teorema.} Sea $V$ un espacio producto interno de dimensión
+finita y sea $\mathcal{B}=\{w_{1}, w_{2}, \dots, w_{n}\}$ una base
+(ordenada) ortonormal de $V$. Sea $T$ un operador lineal sobre $V$
+y sea $A$ la matriz de $T$ en la base ordenada $\mathcal{B}$. Entonces
+$[T]_{\mathcal{B}}=[\langle  T(v_{i}) | v_{j}\rangle]$
+
+\textbf{Corolario.} Sea $V$ un espacio producto interno de dimensión
+finita y sea $T$ un operador lineal sobre $V$. En cualquier base
+ortogonal $\mathcal{B}=\{w_{1}, w_{2}, \dots, w_{n}\}$ de $V$
+la matriz de $T^{\ast}$ es la conjugada de la transpuesta de la
+matriz de $T$, es decir $[T^{\ast}]_{\mathcal{B}} =\overline{[T]
+	_{\mathcal{B}}^{t}}$.
+
+
+

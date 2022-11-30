@@ -1,0 +1,69 @@
+\newpage
+
+\textbf{Corolario.} Sea $V$ un espacio vectorial de dimensión
+finita sobre el cuerpo $\mathbb{F}$. Si $L$ es un funcional
+lineal en el espacio dual $V^{\ast}$ de $V$, entonces existe
+un único vector $v\in V$ tal que $$L(v) = f(v)\text{ para todo }f\in V^{\ast}.$$
+\textbf{Corolario.} Sea $V$ un espacio vectorial de dimensión
+finita sobre el cuerpo $\mathbb{F}$. Toda base de $V^{\ast}$
+es dual de alguna base de $V$.
+
+\section{Transpuesta de una transformación lineal}
+
+\textbf{Teorema.} Sean $V$ y $W$ espacios vectoriales
+sobre el cuerpo $\mathbb{F}$. Para toda transformación
+lineal $T$ de $V$ en $W$, existe una única transformación
+lineal  $T^{T}:W^{\ast}\to V^{\ast}$ tal que $$(T^{T}g)(v)
+= g(Tv)$$ para todo $g\in W^{\ast}$ y
+$v\in V$.
+
+%Sean $V$ y $W$  dos espacios vectoriales
+%sobre el cuerpo $\mathbb{F}$ y $T$ una transformación lineal
+%de $V$ en $W$ sobre $\mathbb{F}$. Para cada $f \in W^{\ast}$
+%tenemos que $T^{T}:W^{\ast}\to V^{\ast}$ es tal que $T^{T}(f)
+%= f\circ T \in V^{\ast}$ (por ser la composición de dos
+%trasformaciones lineales).
+
+\textbf{Proposicion.} $T^{T}\in \hom_{\mathbb{F}}(W^{\ast}
+,V^{\ast})$.
+
+%\textbf{Definición.} Si $V$ es un espacio vectorial sobre el
+%cuerpo $\mathbb{F}$ y $S$ es un subconjunto de $V$, el anulador
+%de $S$ es el conjunto $S^{\circ}$ de funcionales lineales $f$
+%sobre $V$ tales que $f(v) = 0$ para todo $v$ de $S$.
+
+%\textbf{Teorema.} Sea $V$ un espacio vectorial de dimensión
+%finita sobre el cuerpo $\mathbb{F}$ y sea $W$ un subespacio
+%de $V$. Entonces
+%$$\dim W + \dim W^{\circ} = \dim V.$$
+%\textbf{Corolario.} Si $W_1$ y $W_2$ son subespacios de un
+%espacio vectorial de dimención finita, entonces $W_1 = W_2$
+%si, y solo si, $W_1^{\circ} = W_2^{\circ}$.
+
+\textbf{Teorema.} Sean $V$ y $W$  dos espacios vectoriales
+sobre el cuerpo $\mathbb{F}$ y $T$ una transformación lineal
+de $V$ en $W$. Entonces $\ker(T^{T})=Im(T)^{\circ}$.
+Particularmente, si $\dim V, \dim W < \infty$ entonces
+\begin{itemize}
+    \item[$(a)$] $rango(T)=rango(T^{T})$.
+    \item[$(b)$] $Im(T^{T})=(\ker T)^{\circ}$.
+\end{itemize}
+
+\textbf{Teorema.} Sean $V$ y $W$  dos espacios vectoriales
+sobre el cuerpo $\mathbb{F}$ y $\dim(V) = m, \dim(W) = n$,
+con $m,n < \infty$ tales que $\mathcal{B}_1=\{v_1,v_2,\dots,v_m\}$ y
+$\mathcal{B}_2=\{w_1,w_2,\dots,w_n\}$ sean las bases de $V$ y
+$W$, respectivamente. Además $\mathcal{B}_1^{\ast}=\{f_1,f_2,
+\dots,f_m\}$ y $\mathcal{B}_2^{\ast}=\{g_1,g_2,\dots,g_n\}$
+son las bases duales de $\mathcal{B}_1$ y $\mathcal{B}_2$,
+respectivamente.  
+\begin{align*}
+    \mathcal{B},\mathcal{C}&\to [T]_{\mathcal{B}\mathcal{C}}
+    \in \mathbb{F}^{m\times n}\\
+    \mathcal{B}^{\ast},\mathcal{C}^{\ast}&\to [T^{T}]_{\mathcal
+    {C}^{\ast}\mathcal{B}^{\ast}}\in\mathbb{F}^{n\times m}
+\end{align*}
+con $T \in \hom_{\mathbb{F}}(V,W)$ entonces
+$[T^{T}]_{\mathcal{C}^{\ast}\mathcal{B}^{\ast}}
+=[T]_{\mathcal{B}\mathcal{C}}^{T}$
+

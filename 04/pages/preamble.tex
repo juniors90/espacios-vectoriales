@@ -1,0 +1,48 @@
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{flowfram}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{array}
+\pagestyle{empty}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\titleformat*{\section}{\color{Blue}}
+%\newenvironment{tips}
+%{
+%\noindent
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{m{.2cm} m{\textwidth}}
+%\rotatebox{90}{\textbf{\resizebox{0.45\textwidth}{!}{FISAT}}}&
+%}
+%{\end{tabular}
+%\end{center}
+%\end{table}
+%\bigskip
+%}
+
+%FONT Change
+%\renewcommand{\familydefault}{cmss} 
+%To Draw a horizontal Line
+\newcommand{\sectionline}{
+  \nointerlineskip \vspace{\baselineskip}
+  \hspace{\fill}\rule{0.8\linewidth}{.7pt}\hspace{\fill}
+  \par\nointerlineskip \vspace{\baselineskip}
+}
+%\AddToBackground{2}{\includegraphics[width=29.7cm]{bkf}}
+%\AddToBackground{2}{\includegraphics[width=29.7cm]{cmy}}
+% Make a border along the top of each page
+\vtwotonetop{1cm}{0.6\paperwidth}{[cmyk]{0,0.91,0.92,0.41}}{topleft}%
+{0.4\paperwidth}{[cmyk]{0,0.91,0.92,0.41}}{topright}
+
+\vtwotonebottom{1cm}{0.6\paperwidth}{[cmyk]{0,0.91,0.92,0.41}}{bottomleft}%
+{0.4\paperwidth}{[cmyk]{0,0.91,0.92,0.41}}{bottomright}
+
+%\vtwotonebottom[1,6]{1cm}{0.6\paperwidth}{[cmyk]{0,0.91,0.92,0.41}}{bottomleft}%
+%{0.4\paperwidth}{[cmyk]{0,0.91,0.92,0.41}}{bottomright}

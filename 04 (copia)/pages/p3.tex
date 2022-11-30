@@ -1,0 +1,45 @@
+\newpage
+
+\textbf{Teorema.} Sean $V$ espacio vectorial sobre
+el cuerpo $\mathbb{F}$, con producto interno, $W \subseteq V$ un subespacio de
+$V$ y $v\in V$
+
+\begin{itemize}
+    \item[$a)$] $w \in W$  es tal que $||v-w||=  \min \{ ||v- \tilde{w}||,
+    \tilde{w} \in W \}$ si y solo sí $w\in W$ es tal que $v - w \bot W$
+    \item[$b)$] Si existe tal $w$, es único.
+    \item[$c)$] Si $\dim W < \infty$ y $\{w_{1}, w_{2}, \dots, w_{n}\}$ es una
+    base de entonces $w=\displaystyle{\sum_{i=0}^{n}} \frac{\langle v|w_{i} \rangle}
+    {||w_{i}||^2}w_{i}$ es como antes.
+\end{itemize}
+
+\textbf{Definición.} Sean $V$ espacio vectorial sobre
+el cuerpo $\mathbb{F}$, con producto interno, $W \subseteq V$ un subespacio de
+$V$ y $v\in V$. Sea $\dim W < \infty$ y $\{w_{1}, w_{2}, \dots, w_{n}\}$ es una
+base de entonces
+$E(v)=\displaystyle{\sum_{i=0}^{n}} \frac{\langle v|w_{i} \rangle}{||w_{i}||^2}w_{i}$ 
+
+Siempre que exista el vector $w$ en el Teorema anterior se le llama \textbf{proyección
+ortogonal} de $v$ sobre $W$.
+
+Si todo vector de $V$ tiene proyección ortogonal sobre $W$,
+la aplicación que asigna a cada vector de $V$ su proyección ortogonal sobre $W$, se
+llama proyección ortogonal de $V$ sobre $W$.
+
+\textbf{Observación.} $Im(E)=W$.
+
+\textbf{Definición.} Sea $V$ un espacio producto interno y $W\subseteq V$ (subconjunto).
+El \textbf{complemento ortogonal} de $W$ es el conjunto $W^{\bot}$
+de los vectores de $V$ ortogonales a todo vector de $W$.
+
+$W^{\bot}=\{v \in V: v\bot W\}=\{v \in V: (v,w)=0, \forall w \in W\}$
+
+\textbf{Teorema.} Sea $W$ un subespacio de dimensión finita de un espacio
+producto interno $V$ y sea $E$ la proyección ortogonal de $V$ sobre $W$.
+Entonces $E^{2}=E$ ($E$ es una transformación lineal idempotente de $V$
+sobre $W$), $\ker(E)=W^{\bot}$ ($W^{\bot}$ es el espacio nulo de $E$) y
+$V = W \oplus W^{\bot}$.
+
+\textbf{Corolario.} Bajo las condiciones del teorema anterior, $Id - E$
+es la proyección ortogonal de $V$ en $W^{\bot}$. Esta es una transformación
+lineal idempotente de $V$ en $W^{\bot}$ con espacio nulo $W$.

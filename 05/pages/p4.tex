@@ -1,0 +1,51 @@
+\newpage
+
+\textbf{Definición.} Si $V$ es un espacio vectorial sobre el
+cuerpo $\mathbb{F}$ y $S\subseteq V$, el anulador
+de $S$ es el conjunto $S^{\circ}=\{f:V\to\mathbb{F}: f(v) = 0
+\text{ para todo }v\in S\}$.
+
+\textbf{Teorema.} Sea $V$ un espacio vectorial de dimensión
+finita sobre el cuerpo $\mathbb{F}$ y sea $W$ un subespacio
+de $V$. Entonces $$\dim W + \dim W^{\circ} = \dim V.$$
+\textbf{Corolario.} Si $W_1$ y $W_2$ son subespacios de un
+espacio vectorial de dimención finita, entonces $W_1 = W_2$
+si, y solo si, $W_1^{\circ} = W_2^{\circ}$.
+
+\section{Doble Dual}
+
+Una pregunta es, ¿si toda base
+de $V^{\ast}$ es la dual de alguna base de $V$?.
+Una posibilidad de contestar esta pregunta es considerar
+$V^{\ast\ast}$, espacio dual de $V^{\ast}$.
+
+Si $v\in V$, entonces $v$ induce un funcional lineal $L_{v}$,
+sobre $V^{\ast}$, deﬁnido por
+$$L_{v}=f(v)$$
+El hecho de que $L_{v}$, sea lineal no es más que una
+reformulación de la deﬁnición de las operaciones lineales
+en $V^{\ast}$:
+\begin{align*}
+    L_v(cf + g) &= (cf + g)(v)\\
+                &= (cf)(v) + g(v)\\
+                &= cf(v) + g(v)\\
+                &= cL_v(f) + L_v(g)
+\end{align*}
+Si $V$ es de dimensión finita y $v \not = 0$, entonces
+$L_v \not = 0$. Es decir, existe un funcional
+lineal $f$ tal que $f(v) \not = 0$.
+
+La demostración es muy simple: Elíjase una base ordenada
+$\mathcal{B} = \{v_1, v_2, \dots, v_n\}$ de $V$ tal que
+$v_1 = v $, y sea $f$ el funcional lineal que asigna a cada
+vector en $V$ su primera coordenada en la base ordenada 
+$\mathcal{B}$.
+
+\textbf{Teorema.} Sea $V$ un espacio vectorial de dimensión
+finita sobre el cuerpo $\mathbb{F}$. Para cada vector $v\in V$
+se define
+\begin{align*}
+    L_v(f) &= f(v)\text{ con $f\in V^{\ast}$}.
+\end{align*}
+Entonces $L:V\to V^{\ast\ast}$ tal que $L(v)=L_v$
+es un isomorfismo.

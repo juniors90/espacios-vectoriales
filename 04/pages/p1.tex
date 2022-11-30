@@ -1,0 +1,49 @@
+\newpage
+
+\section{Subespacios cíclicos y anuladores}
+
+\textbf{Definición.} Sea $v\in V$, el subespacio $T$-cíclico
+generado por $v$ es el subespacio $Z(v, T)$ de los vectores
+de la forma $g(T)(v)$, $g \in \mathbb{F}[x]$.
+
+\textbf{Definición.} Si $Z(v, T) = V$ entonces se dice
+que $v$ es un vector cíclico de $T$.
+
+\textbf{Definición.} Sea $v\in V$. El $T$-anulador de $v$ es
+el ideal $M (v, T)$ en $\mathbb{F}[x]$ que consta de todos
+los polinomios $g \in \mathbb{F}[x]$ de modo que $g(T)v = 0$.
+Al polinomio mónico único $p$, que genera este ideal se lo
+llamará también el $T$-anulador de $v$.
+
+\textbf{Teorema.}
+Sea $v\in V$, $v\not = 0$ y $p_x$ el $T$-anulador de $v$.
+\begin{itemize}
+    \item[$i)$] El grado de $p_x$ es igual a la dimensión del
+    subespacio cíclico $Z(v, T)$.
+    \item[$ii)$] Si el grado del polinomio de $p_x$ es $k$
+    entonces los vectores $v, Tv, T^{2}v,\dots, T^{k-1}$ forman
+    una base de $Z(v, T)$.
+    \item[$iii)$] Si $U$ es el operador lineal en $Z(v, T)$
+    inducido por $T$ entonces el polinomio minimal de $U$ es $p_x$.
+\end{itemize}
+
+\textbf{Definición.} Si $U$ es un operador lineal sobre un
+espacio de dimensión finita $W$, entonces $U$ tiene un vector
+cíclico si, y solo si, existe una base ordenadal de $W$ con la
+que $U$ este representada por la matriz asociada al polinomio
+minimal de $U$.
+
+\textbf{Corolario.} Si $A$ es la matriz asociada a un polinomio
+mónico $p$, entonces $p$ es el polinomio minimal y el polinomio
+característico de $A$.
+
+\section{Descomposiciones cíclicas y forma racional}
+
+\textbf{Definición.} Sea $T$ un operador lineal sobre un
+espacio vectorial $V$ y sea $W$ un subespacio de $V$.
+Se dice que $W$ es $T$-admisible si
+\begin{itemize}
+    \item[$i)$] $W$ es invariante por $T$.
+    \item[$ii)$] si $f(T)(v)$ está en $W$, existe un vector
+    $w\in W$ tal que $f(T)(v) = f(T)(w)$.
+\end{itemize}

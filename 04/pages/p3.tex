@@ -1,0 +1,58 @@
+\newpage
+
+\section{Forma de Jordan}
+
+Supongamos que $T$ es un operador lineal sobre $V$ y
+que el polinomio característico de $T$ se puede factorizar
+sobre $\mathbb{F}$ como sigue $p_T=(x-c_1)^{r_1}\dots (x-c_k)^{r_k}$,
+con $r_i>0$, $c_i\not = c_j$. Entonces el polinomio minimal
+de $T$ será $m_T=(x-c_1)^{a_1}\dots (x-c_k)^{a_k}$
+con $0<a_i\leq r_k$
+
+Si $V_i$ es el espacio nulo de $(T-c_iI)^{a_i}$, entonces
+el teorema de descomposición prima dice que
+$$V=V_1\oplus V_2 \oplus \dots \oplus V_k$$
+y que el operador $T$, inducido en $V_i$ por $T$ tiene
+polinomio minimal $(x - c_i)^{a_i}$.
+
+Esto nos da el puntapié para hallar la descomposición de $T$
+con $T=D+N$.
+
+\textbf{Observación:} La desomposición de $D$ es
+$$D = c_1E_1 + c_2E_2 + \dots + c_kE_k$$
+
+Si queremos dar una forma canónica debemos pensar en cómo
+describir el $N$. Por corolario anterior, si $N$ es nilpotente,
+existe $r>0$ tal que $N^{r}=0$ entonces $m_N|x^{r}$. Con lo cual
+$N$ es nilpotente si y solo sí
+$m_N=x^{s}$ para algún $s\in \mathbb{N}, s\leq n$ si y solo sí
+$p_N=x^{n}$ para algún $n=\dim(V)$.
+
+Por \textbf{teorema de descomposición cíclica}, tenemos que si
+$$
+p_r=x^{s_r},
+p_{r-1}=x^{s_{r-1}},
+\dots
+p_2=x^{s_2},
+p_1=x^{s_1}=m_N
+$$
+con $s_r \leq s_{r_1} \leq \dots \leq s_2 \leq s_1$ tales que
+$s_r + s_{r_1} + \dots + s_2 + s_1 =\dim(V)=n$. Existe una base
+$\mathcal{B}$ tal que
+\begin{equation*}[N]=\left(
+\begin{smallmatrix}
+0      & 0      & \cdots & 0      & 0      &        &          &        &        &        &        &\\
+1      & 0      & \cdots & 0      & 0      &        &          &        &        &        &        &\\
+0      & 1      & \cdots & 0      & 0      &        &          &        &        &        &        &\\
+\vdots & \vdots & \ddots & \vdots & \vdots &        &          &        &        &        &        &\\
+0      & 0      & \cdots & 1      & 0      &        &          &        &        &        &        &\\
+       &        &        &        &        & 0      & 0      & 0        & \cdots & 0      & 0      &\\
+       &        &        &        &        & 1      & 0      & 0        & \cdots & 0      & 0      &\\
+       &        &        &        &        & 0      & 1      & 0        & \cdots & 0      & 0      &\\
+       &        &        &        &        & 0      & 0      & 1        & \cdots & 0      & 0      &\\
+       &        &        &        &        & \vdots & \vdots &          & \ddots & \vdots & \vdots &\\
+       &        &        &        &        & 0      & 0      &          & \cdots & 1      & 0      &\\
+       &        &        &        &        &        &        &          &        &        &        &\ddots 
+    \end{smallmatrix}\right)
+\end{equation*}
+

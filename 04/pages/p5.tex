@@ -1,0 +1,48 @@
+\newpage
+
+\textbf{Definición.} Si $U$ es un operador lineal sobre un
+espacio de dimensión finita $W$, entonces $U$ tiene un vector
+cíclico si, y solo si, existe una base ordenadal de $W$ con la
+que $U$ este representada por la matriz asociada al polinomio
+minimal de $U$.
+
+\textbf{Corolario.} Si $A$ es la matriz asociada a un polinomio
+mónico $p$, entonces $p$ es el polinomio minimal y el polinomio
+característico de $A$.
+
+\section{Descomposiciones cíclicas y forma racional}
+
+\textbf{Definición.} Sea $T$ un operador lineal sobre un
+espacio vectorial $V$ y sea $W$ un subespacio de $V$.
+Se dice que $W$ es $T$-admisible si
+\begin{itemize}
+    \item[$i)$] $W$ es invariante por $T$.
+    \item[$ii)$] si $f(T)(v)$ está en $W$, existe un vector
+    $w\in W$ tal que $f(T)(v) = f(T)(w)$.
+\end{itemize}
+
+\textbf{Teorema.} (Teorema de descomposición cíclica).
+Sea $T$ un operador lineal lineal sobre un espacio vectorial
+de dimensión finita y sea $W_0$ un subespacio propio
+$T$-admisible de $V$. Existen los vectores no nulos
+$v_1, v_2, \dots v_r\in V$ con $T$-anuladores
+$p_i=m_{v_i, T}$, $i=1,2,\dots,r$ tales que
+\begin{itemize}
+    \item[$i)$] $V=W_0\oplus Z(v_1, T)\oplus \dots \oplus Z(v_k, T)$.
+    \item[$ii)$] $p_k|p_{k-1}, k=2,\dots,r$.
+\end{itemize}
+
+\textbf{Corolario.} Si $T$ es un operador lineal sobre
+un espacio vectorial de dimensión finita entonces todo
+subespacio $T$-admisible tiene un subespacio complementario
+que es también invariante por $T$.
+
+\textbf{Corolario.}
+Sea $T$ un operador lineal sobre un espacio vectoría $V$ de dimensión
+finita
+\begin{itemize}
+    \item[$i)$] Existe un vector $v\in V$ tal que el $T$-anulador
+    de $v$ es el polinomio minimal de $T$.
+    \item[$ii)$] $T$ tiene un vector cíclico si, y solo si, los
+    polinomios característico y minimal de $T$ son idénticos.
+\end{itemize}

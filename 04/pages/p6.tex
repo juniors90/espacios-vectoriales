@@ -1,0 +1,46 @@
+\newpage
+
+
+\textbf{Teorema.} (Teorema de Cayley-Hamilton generalizado). Sea $T$
+un operador lineal sobre un espacio vectorial $V$ de dimensión finita.
+Sean $m_T$ y $p_T$ los polinomios minimal y característico de $T$,
+respectivamente.
+\begin{itemize}
+    \item[$i)$]  $m_T$ divide a $p_T$.
+    \item[$ii)$]  $m_T$ y $p_T$ tienen los mismos factores primos,
+    salvo multiplicidades.
+    \item[$iii)$] Si $$m_T=p_1^{r_1}p_2^{r_2}\dots p_k^{r_k}$$
+    es la factorización prima de $p_T$, entonces
+    $$p_T=p_1^{d_1}p_2^{d_2}\dots p_k^{d_k}$$
+    donde $d_i$ es la nulidad de $p_i(T)^{r_i}$ dividida por el grado de $p_i$.
+\end{itemize}
+
+\textbf{Corolario.} Si $T$ es un operador lineal nilpotente
+sobre un espacio vectorial de dimensión $n$, entonces el
+polinomio característico de $T$ es $x^{n}$.
+
+\textbf{Teorema.} Sea $\mathbb{F}$ un cuerpo y sea $B\in
+\mathbb{F}^{n\times n}$. Entonces $B$ es semejante sobre
+$\mathbb{F}$ a una, y solo a una, matriz que está en forma
+racional.
+
+\section{Forma de Jordan}
+
+Supongamos que $T$ es un operador lineal sobre $V$ y
+que el polinomio característico de $T$ se puede factorizar
+sobre $\mathbb{F}$ como sigue $p_T=(x-c_1)^{r_1}\dots (x-c_k)^{r_k}$,
+con $r_i>0$, $c_i\not = c_j$. Entonces el polinomio minimal
+de $T$ será $m_T=(x-c_1)^{a_1}\dots (x-c_k)^{a_k}$
+con $0<a_i\leq r_k$
+
+Si $V_i$ es el espacio nulo de $(T-c_iI)^{a_i}$, entonces
+el teorema de descomposición prima dice que
+$$V=V_1\oplus V_2 \oplus \dots \oplus V_k$$
+y que el operador $T$, inducido en $V_i$ por $T$ tiene
+polinomio minimal $(x - c_i)^{a_i}$.
+
+Esto nos da el puntapié para hallar la descomposición de $T$
+con $T=D+N$.
+
+\textbf{Observación:} La desomposición de $D$ es
+$$D = c_1E_1 + c_2E_2 + \dots + c_kE_k$$

@@ -1,0 +1,44 @@
+\newpage
+
+Si $V$ es de dimensión finita se puede obtener una descripción
+muy explícita del espacio dual $V^{\ast}$.
+
+Por el Teorema 5 sabemos algo acerca del espacio $V^{\ast}$:
+$$\dim V^{\ast} = \dim V.$$
+Sea $\mathcal{B} = \{v_1,v_2,\dots, v_n\}$ una base de $V$.
+Conforme al Teorema 1 existe (para cada $i$) un funcional
+lineal único $f_i$ en $V$ tal que $$f_i(v_j)=\delta_{ij}.$$
+De esta forma se obtiene de $\mathcal{B}$ un conjunto de $n$
+funcionales lineales distintos $f_1,\dots , f_k$, sobre $V$.
+Estos funcionales son también linealmente independientes,
+pues supóngase que
+\begin{align*}
+    f_i = \displaystyle{\sum_{i=1}^{n}}c_if_i
+\end{align*}
+Entonces
+\begin{align*}
+    f(v_j) &= \displaystyle{\sum_{i=1}^{n}}c_if_i(v_j)\\
+           &= \displaystyle{\sum_{i=1}^{n}}c_i\delta_{ij}\\
+           &= c_j.
+\end{align*}
+En particular, si $f$ es el funcional cero. $f_i(v_j) = 0$ para
+cada $j$ y, por tanto, los escalares $c$, son todos ceros.
+Entonces los $f_1,\dots, f_k$, son $n$ funcionales linealmente
+independientes, y como se sabe que $V^{\ast}$ tiene dimensión $n$,
+deben ser tales que $\mathcal{B}^{\ast} = \{f_1,\dots, f_k\}$
+es una base de $V^{\ast}$.
+Esta base se llama \textbf{base dual} de $\mathcal{B}$.
+
+\textbf{Teorema.} Sea $V$ un espacio vectorial de dimensión
+finita sobre el cuerpo $\mathbb{F}$ y sea $\mathcal{B} =
+\{v_1,v_2,\dots,v_n\}$ una base de $V$. Entonces existe una
+única base dual $\mathcal{B}^{\ast} = \{f_1,f_2,\dots,f_n\}$
+de $V^{\ast}$ tal que $f_i(v_j) = \delta_{ij}$. Para cada
+funcional lineal $f$ sobre $V$ se tiene
+\begin{align*}
+    f(v) &= \displaystyle{\sum_{i=1}^{n}}f_i(v_i)f_i
+\end{align*}
+y para cada vector $v$ de $V$ se tiene
+\begin{align*}
+    v &= \displaystyle{\sum_{i=1}^{n}}f_i(v)v_i
+\end{align*}

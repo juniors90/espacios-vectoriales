@@ -1,0 +1,62 @@
+\newpage
+
+\textbf{Definición.} Sea $A\in \mathbb{F}^{n \times m}$,
+la \textbf{transpuesta} de $A$ es $A^{T}\in \mathbb{F}^{m \times n}$,
+definida por $A_{ij} = A_{ji}$.
+
+\textbf{Teorema.} Sea $A\in \mathbb{F}^{n \times m}$. Entonces
+el rango de filas de $A$ es igual al rango de columnas de $A$.
+
+\section{{\Large Espacios con Productos Internos}}
+
+Sea $\mathbb{F}=\mathbb{R}$ ó $\mathbb{C}$
+
+\textbf{Definición}. Un producto interno sobre $\mathbb{F}-$espacio vectorial
+es una funcion $(\cdot|\cdot):V\times V \to \mathbb{F}$ tal que $u, v, w \in V$,
+$c\in\mathbb{F}$ tal que
+
+\begin{itemize}
+    \item[$a)$] $(u+v|w)=(u|w)+(v|w)$
+    \item[$b)$] $(cu|w)=c(u|w)$
+    \item[$c)$] $(u|w)=\overline{(w|u)}$
+    \item[$d)$] $(u|u) > 0$ si $u \not = 0$
+\end{itemize}
+
+$\ast$ Es sesquilineal en la segunda entrada
+
+$(u|v+cw) = \overline{(v+w|u)}
+          = \overline{(v|u)+c(w|u)}
+          = \overline{(u|v)}+\overline{c}\overline{(u|w)}
+          = (u|v)+\overline{c}(u|w)$
+
+\begin{itemize}
+    \item[$i)$] Para cada $v \in V$, $f_{v}:V \to \mathbb{F}$ tal
+    que $f_{v}=(u|v)$ entonces $f_{v}\in V^{\ast}$
+    \item[$ii)$] Si $\mathbb{F}=\mathbb{R}$ entonces $\Phi:V
+    \to V^{\ast}$, $\Phi(v)=f_{v}$ $\Rightarrow$
+    $\Phi$ es un isomorfismo (si $\dim V < \infty$).
+\end{itemize}
+
+\textbf{Definición}. $||\cdot||:V \to\mathbb{R}_ {\geq 0}$
+tal que $||v||=\sqrt{\langle v,v\rangle}$, \underline{norma} de $V$.
+($\ast$ depende del producto interno $\langle , \rangle$).
+
+\textbf{Propiedades.}
+
+\begin{itemize}
+    \item[$a)$] $||cv||=|c|||v||$
+    \item[$b)$] $||u+w||^{2}=||u||^{2}+2\Re\langle v, w\rangle+||w||^{2}$
+    \item[$c)$] $(u|w)=\frac{1}{4}\left(||u+w||^{2}
+                                          -||u-w||^{2}
+                                          +i||u+w||^{2}
+                                          -i||u-w||^{2}\right)$ si $\mathbb{F}=\mathbb{C}$.
+    \item[$d)$] $(u|w)=\frac{1}{4}\left(||u+w||^{2}
+                                        -||u-w||^{2}\right)$ si $\mathbb{F}=\mathbb{R}$.
+\end{itemize}
+
+\textbf{Teorema.} Sean $u, v \in V$.
+
+\begin{itemize}
+	\item[$a)$] $|\langle u|v \rangle|\leq ||u||.||w||$
+	\item[$b)$] $||u + v|| \leq ||u|| + ||v||$
+\end{itemize}
